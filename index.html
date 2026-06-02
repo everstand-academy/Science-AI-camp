@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>恆立《科學 AI》夏令營 2025</title>
+<title>恆立 Everstand Academy《科學 AI》夏令營 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -531,7 +531,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">🚀 恆立科學AI夏令營</div>
+  <div class="nav-logo">🚀 恆立 Everstand Academy 科學AI夏令營</div>
   <a href="#register" class="nav-cta">立即報名 →</a>
 </nav>
 
@@ -541,13 +541,13 @@
   <div class="container" style="position:relative;z-index:2;">
     <div class="hero-layout">
       <div class="hero-text">
-        <div class="hero-badge">🌌 2025 暑假 · 太空主題科學營</div>
+        <div class="hero-badge">🌌 2026 暑假 · 太空主題科學營</div>
         <h1>讓孩子的<span>想像力</span><br>成為真實作品</h1>
         <p class="hero-sub">Minecraft × SPM × 雷射切割 × LEGO 程式機械<br>帶孩子從太空探索，走進動手實作的工程世界</p>
         <div class="hero-pills">
-          <span class="pill pill-teal">🎓 國小 2–4 年級</span>
+          <span class="pill pill-teal">🎓 國小升 2–4 年級</span>
           <span class="pill pill-gold">👥 每班 6–12 人小班制</span>
-          <span class="pill pill-pink">📍 JUR 共享空間</span>
+          <span class="pill pill-pink"><a href="https://maps.app.goo.gl/t1hat7JLhdbkRMW68?g_st=ic" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">📍 JUR 共享空間</a></span>
           <span class="pill">🍱 含午餐午休</span>
         </div>
         <a href="#register" class="hero-cta">立即為孩子報名</a>
@@ -593,7 +593,7 @@
       <div class="info-card">
         <div class="info-icon">💰</div>
         <div class="info-label">一週課程費用</div>
-        <div class="info-value gold">NT$ 14,000</div>
+        <div class="info-value gold">NT$ 14,500</div>
       </div>
       <div class="info-card">
         <div class="info-icon">🍱</div>
@@ -813,7 +813,7 @@
         <div class="gallery-overlay">老師帶領全班孩子組裝</div>
       </div>
 
-      <!-- 照片 5：孩子舉起成品合照 - 主角大圖 -->
+      <!-- 照片 7：孩子舉起成品合照 - 主角大圖 -->
       <div class="gallery-item gallery-featured">
         <img src="images/IMG_7504.JPG" alt="孩子展示完成的作品" style="height:500px;">
         <div class="gallery-overlay">🏆 完成作品，帶回家！</div>
@@ -888,7 +888,7 @@
           午餐是自備還是包含在費用裡？
           <span class="faq-arrow">▼</span>
         </div>
-        <div class="faq-a">午餐已含在 14,000 元學費中，孩子在 12:00–13:30 享用午餐並進行午休，家長不需要另外準備。</div>
+        <div class="faq-a">午餐已含在 14,500 元學費中，孩子在 12:00–13:30 享用午餐並進行午休，家長不需要另外準備。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">
@@ -923,32 +923,32 @@
         <div class="form-grid">
           <div class="form-group">
             <label>家長姓名 <span class="req">*</span></label>
-            <input type="text" placeholder="您的稱呼" required>
+            <input id="parentName" type="text" placeholder="您的稱呼" required>
           </div>
           <div class="form-group">
             <label>聯絡電話 <span class="req">*</span></label>
-            <input type="tel" placeholder="0912-345-678" required>
+            <input id="phone" type="tel" placeholder="0912-345-678" required>
           </div>
           <div class="form-group">
             <label>電子郵件 <span class="req">*</span></label>
-            <input type="email" placeholder="your@email.com" required>
+            <input id="email" type="email" placeholder="your@email.com" required>
           </div>
           <div class="form-group">
             <label>孩子姓名 <span class="req">*</span></label>
-            <input type="text" placeholder="孩子的名字" required>
+            <input id="childName" type="text" placeholder="孩子的名字" required>
           </div>
           <div class="form-group">
             <label>孩子就讀年級 <span class="req">*</span></label>
-            <select required>
+            <select id="grade" required>
               <option value="" disabled selected>請選擇</option>
-              <option>國小 2 年級</option>
-              <option>國小 3 年級</option>
-              <option>國小 4 年級</option>
+              <option>國小升 2 年級</option>
+              <option>國小升 3 年級</option>
+              <option>國小升 4 年級</option>
             </select>
           </div>
           <div class="form-group">
             <label>孩子性別</label>
-            <select>
+            <select id="childGender">
               <option value="" disabled selected>請選擇（選填）</option>
               <option>男生</option>
               <option>女生</option>
@@ -986,11 +986,11 @@
           </div>
           <div class="form-group full">
             <label>孩子的興趣或特別想接觸的項目（選填）</label>
-            <textarea placeholder="例如：很喜歡 Minecraft，想學機器人，或對雷射切割有興趣…"></textarea>
+            <textarea id="interests" placeholder="例如：很喜歡 Minecraft，想學機器人，或對雷射切割有興趣…"></textarea>
           </div>
           <div class="form-group full">
             <label>其他問題或備註（選填）</label>
-            <textarea placeholder="例如：有飲食限制、有兄弟姐妹一起報名等…"></textarea>
+            <textarea id="notes" placeholder="例如：有飲食限制、有兄弟姐妹一起報名等…"></textarea>
           </div>
           <div class="form-group full" style="margin-top:4px;">
             <label class="checkbox-item" style="cursor:pointer;">
@@ -1001,7 +1001,7 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="submit-btn">🚀 送出報名表單</button>
+        <button type="submit" class="submit-btn" id="submitBtn">🚀 送出報名表單</button>
       </form>
       <div class="success-msg" id="successMsg">
         <div class="success-icon">🎉</div>
@@ -1016,8 +1016,8 @@
 <!-- FOOTER -->
 <footer>
   <p><strong>恆立《科學 AI》夏令營</strong> × <strong>JUR 共享空間</strong></p>
-  <p style="margin-top:8px;">課程地點：JUR 共享空間（天母 / 士林區域）｜招生對象：國小 2–4 年級</p>
-  <p style="margin-top:6px; font-size:0.75rem;">如有任何問題，歡迎直接致電或傳訊聯繫招生人員。</p>
+  <p style="margin-top:8px;">課程地點：<a href="https://maps.app.goo.gl/t1hat7JLhdbkRMW68?g_st=ic" target="_blank" rel="noopener noreferrer" style="color:var(--gold)">JUR 共享空間 ( 天母HQ )</a> ｜招生對象：國小升 2～4 年級</p>
+  <p style="margin-top:6px; font-size:0.75rem;">如有任何問題，歡迎透過<a href="https://line.me/ti/p/@049ocftf" target="_blank" rel="noopener noreferrer" style="color:var(--gold)">官方Line</a>與我們聯繫</p>
 </footer>
 
 <script>
@@ -1042,16 +1042,50 @@
   }
 
   // Form submit
-  function handleSubmit(e) {
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzzBxoaO8qzHOMbRGsbA3j1kHeomDJV3nl5a96PxjykwzitR6kYd9-QZ1g9KwFnhFr25Q/exec';
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    const checkboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked');
-    if (checkboxes.length === 0) {
+
+    const periods = [...document.querySelectorAll('.checkbox-group input[type="checkbox"]:checked')]
+      .map(cb => cb.value);
+
+    if (periods.length === 0) {
       alert('請至少選擇一個希望報名的梯次。');
       return;
     }
-    document.getElementById('regForm').style.display = 'none';
-    document.getElementById('successMsg').classList.add('show');
-    window.scrollTo({ top: document.getElementById('register').offsetTop - 80, behavior: 'smooth' });
+
+    const btn = document.getElementById('submitBtn');
+    btn.textContent = '⏳ 送出中...';
+    btn.disabled = true;
+
+    const data = {
+      childName:   document.getElementById('childName').value,
+      childGender: document.getElementById('childGender').value,
+      grade:       document.getElementById('grade').value,
+      parentName:  document.getElementById('parentName').value,
+      phone:       document.getElementById('phone').value,
+      email:       document.getElementById('email').value,
+      interests:   document.getElementById('interests').value,
+      notes:       document.getElementById('notes').value,
+      periods
+    };
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      document.getElementById('regForm').style.display = 'none';
+      document.getElementById('successMsg').classList.add('show');
+      window.scrollTo({ top: document.getElementById('register').offsetTop - 80, behavior: 'smooth' });
+    } catch(err) {
+      alert('送出失敗，請稍後再試或直接聯繫招生人員。');
+      btn.textContent = '🚀 送出報名表單';
+      btn.disabled = false;
+    }
   }
 </script>
 </body>
