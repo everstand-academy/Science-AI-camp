@@ -221,6 +221,8 @@
   .info-label { font-size: 0.78rem; color: var(--muted); font-weight: 600; letter-spacing: 0.05em; }
   .info-value { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.1rem; }
   .info-value.gold { color: var(--gold); }
+  .original-price { color: #999; text-decoration: line-through; font-size: 0.9em; font-weight: normal; }
+  .sale-price { color: gold; font-weight: bold; font-size: 0.9em; }
 
   /* ── PERIODS ── */
   .periods-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -581,51 +583,6 @@ src="https://www.facebook.com/tr?id=2190722638432096&ev=PageView&noscript=1"
 
 <div class="divider"></div>
 
-<!-- INFO -->
-<section>
-  <div class="container">
-    <div class="reveal">
-      <div class="section-label">📋 課程資訊</div>
-      <h2 class="section-title">一眼掌握<span>所有重點</span></h2>
-      <p class="section-desc">五天完整體驗，每天都有明確作品，方便孩子分享、家長紀錄。</p>
-    </div>
-    <div class="info-grid reveal">
-      <div class="info-card">
-        <div class="info-icon">📅</div>
-        <div class="info-label">開課日期</div>
-        <div class="info-value">四梯次可選</div>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">⏰</div>
-        <div class="info-label">上課時間</div>
-        <div class="info-value">09:00 – 16:30</div>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">👦</div>
-        <div class="info-label">招收對象</div>
-        <div class="info-value">國小升 2～4 年級</div>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">👫</div>
-        <div class="info-label">班級人數</div>
-        <div class="info-value">6 – 12 人</div>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">💰</div>
-        <div class="info-label">一週課程費用</div>
-        <div class="info-value gold">NT$ 14,500</div>
-      </div>
-      <div class="info-card">
-        <div class="info-icon">🍱</div>
-        <div class="info-label">費用含</div>
-        <div class="info-value" style="font-size:0.9rem;">師資、材料、設備、</br>午餐、點心</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
 <!-- PERIODS -->
 <section>
   <div class="container">
@@ -867,6 +824,55 @@ src="https://www.facebook.com/tr?id=2190722638432096&ev=PageView&noscript=1"
           <span class="tag">多校營隊經驗</span>
           <span class="tag gold-tag">程式 × 機構 × 科學</span>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- INFO -->
+<section>
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">📋 課程資訊</div>
+      <h2 class="section-title">一眼掌握<span>所有重點</span></h2>
+      <p class="section-desc">五天完整體驗，每天都有明確作品，方便孩子分享、家長紀錄。</p>
+    </div>
+    <div class="info-grid reveal">
+      <div class="info-card">
+        <div class="info-icon">📅</div>
+        <div class="info-label">開課日期</div>
+        <div class="info-value">四梯次可選</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">⏰</div>
+        <div class="info-label">上課時間</div>
+        <div class="info-value">09:00 – 16:30</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">👦</div>
+        <div class="info-label">招收對象</div>
+        <div class="info-value">國小升 2～4 年級</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">👫</div>
+        <div class="info-label">班級人數</div>
+        <div class="info-value">6 – 12 人</div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">💰</div>
+        <div class="info-label">一週課程費用</div>
+        <!-- <div class="info-value gold">NT$ 14,500</div> -->
+        <div class="info-value gold">
+          <div class="original-price">原價 NT$ 16,800</div>
+          <div class="sale-price">特價 NT$ 14,500</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">🍱</div>
+        <div class="info-label">費用含</div>
+        <div class="info-value" style="font-size:0.9rem;">師資、材料、設備、</br>午餐、點心</div>
       </div>
     </div>
   </div>
